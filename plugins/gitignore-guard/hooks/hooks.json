@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/check_gitignore.py\" --claude 2>/dev/null || python \"${CLAUDE_PLUGIN_ROOT}/scripts/check_gitignore.py\" --claude",
+            "timeout": 15,
+            "statusMessage": "민감 파일 .gitignore 검사 중..."
+          }
+        ]
+      }
+    ]
+  }
+}

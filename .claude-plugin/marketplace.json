@@ -1,0 +1,14 @@
+{
+  "name": "leetaehee-hooks",
+  "description": "LeeTaetae의 Claude Code 훅 모음",
+  "owner": {
+    "name": "LeeTaetae"
+  },
+  "plugins": [
+    {
+      "name": "gitignore-guard",
+      "source": "./plugins/gitignore-guard",
+      "description": ".env 등 민감 파일이 .gitignore 로 보호되지 않으면 git add/commit/push 를 차단하고 경고하는 훅"
+    }
+  ]
+}
